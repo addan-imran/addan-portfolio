@@ -257,3 +257,21 @@ UIkit.util.on('#space', 'click', function (e) {
     }).show();
     e.preventDefault();
 });
+
+const handleDownload = () => {
+    const filePath = "assets/resume.pdf"; // Relative path to the file
+
+    // Create a link element
+    const link = document.createElement("a");
+    link.href = filePath;
+    link.download = "addan-resume.pdf"; // Specify the downloaded file name
+    link.target = "_blank";
+    link.rel = "White paper";
+
+    // Dispatch a click event on the link
+    link.dispatchEvent(new MouseEvent("click"));
+};
+function openPDF() {
+    const pdfUrl = 'assets/resume.pdf'; // Replace this with the actual URL of your PDF file
+    window.open(pdfUrl, '_blank'); // '_blank' opens the file in a new tab
+}
