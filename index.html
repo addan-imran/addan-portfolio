@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GSAP PortFolio</title>
+    <title>Addan Portfolio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.20.8/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/common.css">
 </head>
@@ -28,7 +29,8 @@
                 </div>
                 <div class="nav__items">
                     <div class="nav__items__item gsap-nav-item">
-                        <a class="nav__items__item__link" href="https://www.linkedin.com/in/addan-imran-developer/" target="_blank">
+                        <a class="nav__items__item__link" href="https://www.linkedin.com/in/addan-imran-developer/"
+                            target="_blank">
                             <svg width="20px" height="20px" viewBox="0 -2 44 44" version="1.1"
                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                 fill="#000000">
@@ -92,7 +94,9 @@
                     <h2 class="text-heading-2 gsap-content-item">UI / Frontend Engineer</h2>
                     <h1 class="text-gradient gsap-content-item">Bringing your digital <span>ideas</span> to life with
                         custom web apps</h1>
-                    <p class="gsap-content-item">I specialize in developing the frontend of web applications using Vanilla JavaScript and ReactJS. I'm proficient in designing any kind of UI with React, Angular, VanillaJS, and have working experience with Vue as well.</p>
+                    <p class="gsap-content-item">I specialize in developing the frontend of web applications using
+                        Vanilla JavaScript and ReactJS. I'm proficient in designing any kind of UI with React, Angular,
+                        VanillaJS, and have working experience with Vue as well.</p>
                     <a onclick="openPDF()" class="gsap-content-item">Resume</a>
                 </div>
                 <div class="content-wrapper_right gsap-illustrate-wrapper">
@@ -102,7 +106,7 @@
         </div>
     </section>
 
-    <section id="projects" class="projects-container">
+    <section id="projects" class="projects-container desktop-only">
         <div class="project-wrapper">
             <h2 class="text-heading-2 text-gradient gsap-content">Projects</h2>
 
@@ -133,7 +137,6 @@
                 </div>
                 <button id="gc">Preview</button>
             </div>
-
             <div class="project-content gsap-content">
                 <img class="project-img" src="./assets/projects/thiscar/1.png" alt="">
                 <div class="project-detail">
@@ -225,20 +228,196 @@
         </div>
     </section>
 
+    <section id="projects" class="mob-project-container mobile-only">
+        <h2 class="text-heading-2">Projects</h2>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="project-content">
+                        <img class="project-img" src="./assets/projects/jobsite/1.png" alt="">
+                        <div class="project-detail">
+                            <h3 class="text-heading-3">Jobsite Sentry </h3>
+                            <p class="text-ellipsis">Job-site is an advanced monitoring system. It utilizes advanced AI
+                                technology in cameras to ensure the highest level of security and surveillance on job
+                                sites. It
+                                helps the user to monitor the movement instead of watching live streaming every time. If
+                                any
+                                movement is caught by the job-site advanced AI technology, it generates an alert to the
+                                monitoring team. So, they can watch the alert and check the priority of the alert
+                                whether it is
+                                threaded or not.</p>
+                        </div>
+                        <button id="jobsite">Preview</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="project-content">
+                        <img class="project-img" src="./assets/projects/gc/1.png" alt="">
+                        <div class="project-detail">
+                            <h3 class="text-heading-3">Group Caption</h3>
+                            <p class="text-ellipsis">The web-based React project that we are developing is designed to
+                                provide
+                                users with a highly customizable workspace where they can manage their personal or group
+                                projects with ease. With this platform, users can create to-do lists, organize tasks,
+                                and access
+                                project summaries, among other features. Furthermore, users have the ability to
+                                customize their
+                                workspace by changing the background color and adjusting the width of the website. Our
+                                project
+                                also includes a feature that allows users to view any available opportunities within
+                                their
+                                company. </p>
+                        </div>
+                        <button id="gc">Preview</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="project-content">
+                        <img class="project-img" src="./assets/projects/thiscar/1.png" alt="">
+                        <div class="project-detail">
+                            <h3 class="text-heading-3">This Car</h3>
+                            <p class="text-ellipsis">I have designed a project for a car website that allows users to
+                                search for
+                                their desired car based on their specific requirements. Users can easily search for a
+                                car by
+                                model or make body type, and price range. Additionally, if the user is unsure about what
+                                they
+                                are looking for, they can consult a personal free shopper who can help them choose the
+                                best car
+                                for their needs.
+                                To make it easier for users to browse through the car catalog, I have implemented a
+                                slider using
+                                Swiper. This slider will display all the car catalogs to the user in an organized and
+                                user-friendly way.</p>
+                        </div>
+                        <button id="thiscar">Preview</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="project-content">
+                        <img class="project-img" src="./assets/projects/goldleash/1.png" alt="">
+                        <div class="project-detail">
+                            <h3 class="text-heading-3">Gold Leash K9</h3>
+                            <p class="text-ellipsis">I worked on a website named "Gold Leash K9," formerly known as "My
+                                Buddy
+                                Place." This platform serves as a hub where users can discover canine companions and
+                                receive
+                                professional training services for their beloved pets. In essence, Gold Leash K9
+                                provides a
+                                comprehensive repository of essential information about dogs, offering users the
+                                opportunity to
+                                not only find suitable canine partners but also to effectively train their own dogs.</p>
+                        </div>
+                        <button id="goldleash">Preview</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="project-content">
+                        <img class="project-img" src="./assets/projects/tailwinds/1.png" alt="">
+                        <div class="project-detail">
+                            <h3 class="text-heading-3">Tailwinds Flight School Management</h3>
+                            <p class="text-ellipsis">I have developed a web dashboard named "Tailwinds Flight School
+                                Management"
+                                for a flight school dedicated to teaching aviation enthusiasts how to pilot aircraft.
+                                This
+                                comprehensive project facilitates users in reserving their classes, while instructors
+                                can access
+                                information about their reservations, past flights, and transactions. The dashboard also
+                                offers
+                                detailed insights into the available aircraft fleet and enables users to conveniently
+                                schedule
+                                their reservations. Moreover, the platform encompasses a range of courses designed to
+                                enrich
+                                students' knowledge about different aspects of aviation and aircraft.</p>
+                        </div>
+                        <button id="tailwinds">Preview</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="project-content">
+                        <img class="project-img"
+                            src="https://plus.unsplash.com/premium_photo-1671297707553-14091918813e?auto=format&fit=crop&q=80&w=1932&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="">
+                        <div class="project-detail">
+                            <h3 class="text-heading-3">Management Information System (MIS)</h3>
+                            <p class="text-ellipsis">In this project, I was responsible for working on Management
+                                Information
+                                System (MIS) functionalities. My tasks included designing various components such as
+                                password
+                                screens, modals, and multiple pages. The project itself is built using the Angular
+                                framework and
+                                Material UI for the user interface. My contributions encompassed creating visually
+                                appealing and
+                                user-friendly interfaces to enhance the overall user experience within the MIS.</p>
+                        </div>
+                        <button>Preview</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="project-content">
+                        <img class="project-img" src="./assets/projects/whatapitch/1.png" alt="">
+                        <div class="project-detail">
+                            <h3 class="text-heading-3">WhatAPitch</h3>
+                            <p class="text-ellipsis">In this project, I was responsible for designing new pages of
+                                WhatAPitch
+                                dashboard. My tasks included designing various components such as Billing screens,
+                                modals, and
+                                multiple pages. The project itself is built using the React for the user interface.</p>
+                        </div>
+                        <button id="WhatAPitch">Preview</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="project-content">
+                        <img class="project-img" src="./assets/projects/taleemly/1.png" alt="">
+                        <div class="project-detail">
+                            <h3 class="text-heading-3">Taleemly (LMS)</h3>
+                            <p class="text-ellipsis">In this project, my role involved designing the entire LSM system.
+                                I was
+                                tasked with creating a landing page featuring a custom slider that responds to mouse
+                                clicks and
+                                movement. Additionally, I designed multiple screens for the project, including the
+                                course
+                                screen, which featured two main categories: new courses and continuing courses.
+                                Furthermore, I
+                                was responsible for designing various authentication screens and modal windows as part
+                                of the
+                                project.</p>
+                        </div>
+                        <button id="taleemly">Preview</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="project-content">
+                        <img class="project-img" src="./assets/projects/space/1.png" alt="">
+                        <div class="project-detail">
+                            <h3 class="text-heading-3">Space</h3>
+                            <p class="text-ellipsis">A web-based project in which the user is able to view the
+                                destination of
+                                different planets with their distance from Earth and estimate time. This web also tells
+                                the user
+                                which types of technology are used in a space vehicle.</p>
+                        </div>
+                        <button id="space">Preview</button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
     <section id="profile" class="profile-container">
         <div class="inner-wrapper">
             <h2 class="text-heading-2 text-gradient gsap-item">Profile</h2>
             <div class="profile-content-area">
                 <div class="profile gsap-item">
                     <div class="profile_inner">
-                        <img class="profile-img"
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDPwuPpNVak1vM9XM1PceqH8D2xmBiCfol2N-aYNFyHA&s"
-                            alt="">
+                        <img class="profile-img" src="/assets/addan.jpg" alt="">
                     </div>
                     <h3 class="text-heading-3 name">Addan Imran</h3>
                     <div class="tags">
                         <div class="tag">
-                            Web developer
+                            UI / Frontend Web Developer
                         </div>
                     </div>
                 </div>
@@ -375,6 +554,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.20.8/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.20.8/dist/js/uikit-icons.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/index.js"></script>
 </body>
 

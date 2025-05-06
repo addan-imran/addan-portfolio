@@ -258,6 +258,27 @@ UIkit.util.on('#space', 'click', function (e) {
     e.preventDefault();
 });
 
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    centeredSlides: true,
+    loop: true,
+    autoplay: {
+        delay: 2500,
+    },
+    breakpoints: {
+        // when window width is >= 640px
+        576: {
+            slidesPerView: 2,
+            spaceBetween: 30
+        }
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+});
+
 const handleDownload = () => {
     const filePath = "assets/resume.pdf"; // Relative path to the file
 
@@ -275,3 +296,11 @@ function openPDF() {
     const pdfUrl = 'assets/resume.pdf'; // Replace this with the actual URL of your PDF file
     window.open(pdfUrl, '_blank'); // '_blank' opens the file in a new tab
 }
+
+document.querySelectorAll('a[href="#projects"]').forEach(link => {
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(window.innerWidth < 768 ? '.mobile-only' : '.desktop-only');
+        target.scrollIntoView({ behavior: 'smooth' });
+    });
+});
